@@ -1,0 +1,20 @@
+.main{
+    height: 100%;
+    background: white;
+    position: relative;
+    padding-top: 10px;
+}
+.writing_head{
+    background: white;
+}
+.editor_footer{
+    position: absolute;
+    padding: 10px;
+    left: 0px;
+    bottom: 0px;
+    width: 100%;
+    border-top: 1px solid #ccc;
+}
+.editor_footer div{
+    font-size: 12px;
+}

@@ -1,0 +1,54 @@
+
+.main{
+  height: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background: rgb(241,242,246);
+}
+.login_section{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 500px;
+  height: 600px;
+  margin: auto;
+}
+.head{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  margin-bottom: 5px;
+}
+.login_avatar{
+  border-radius: 50%;
+  overflow: hidden;
+}
+.login_name{
+  margin-left: 10px;
+  font-size: 20px;
+  font-weight: 1000;
+}
+.blog_name{
+  margin-bottom: 10px;
+  font-size: 12px;
+  color: gray;
+}
+
+.login_checkboxs{
+  width: 219px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.login_submit{
+  margin-top: 20px;
+  width: 219px;
+}
+.footer{
+  margin-bottom: 100px;
+  width: auto;
+  height: 20px;
+}

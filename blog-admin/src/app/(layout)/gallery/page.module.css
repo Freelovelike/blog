@@ -1,0 +1,10 @@
+.gallery_content{
+    padding: 15px 20px;
+}
+.gallery_head{
+    height: 100px;
+}
+.gallery_body{
+    overflow: scroll;
+    height: 800px;
+}
