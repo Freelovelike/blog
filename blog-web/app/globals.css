@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+body{
+    @apply h-screen
+}
+.nav{
+    @apply hover:text-black
+    hover:bg-white
+    hover:after:content-['']
+    hover:after:mb-[-1.5rem]
+    hover:after:block
+    hover:after:bg-black
+    hover:after:h-0.5
+    hover:after:w-full
+}
+.navactive{
+    @apply text-black
+   bg-white
+    after:content-['']
+   after:mb-[-1.5rem]
+    after:block
+   after:bg-black
+    after:h-0.5
+    after:w-full
+}
+#main{
+    width: 100%;
+    height: 100%;
+    background-color: rgb(241,245,249);
+}
