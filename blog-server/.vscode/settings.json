@@ -1,0 +1,6 @@
+{
+    "editor.fontVariations": false,
+    "editor.codeActionsOnSave": {
+        "source.organizeImports": "explicit"
+    }
+}
