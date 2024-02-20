@@ -10,8 +10,6 @@ const Gallery = () => {
   const listhight = useRef([0, 0, 0, 0]);
   const [imgList, setImgList] = useState<Array<Array<any>>>([[], [], [], []]);
   useEffect(() => {
-    console.log({ listhight });
-
     const getGallery = async () => {
       const res = await getGalleryList();
       res.data.forEach((item: any, index: number) => {
@@ -48,7 +46,7 @@ const Gallery = () => {
         <div className={styles.gallery_head}>
           <Row>
             <Col span={4}>
-              <UpLoadImg />
+              <UpLoadImg imgList setImgList/>
             </Col>
             <Col>图库</Col>
             <Col>删除</Col>
@@ -57,7 +55,7 @@ const Gallery = () => {
         <div className={styles.gallery_body}>
         <Row gutter={[16, 24]}>
           {...res.map((item, index) => {
-            return <Col span={6}>{res[index]}</Col>;
+            return <Col span={6} key={index}>{res[index]}</Col>;
           })}
         </Row>
         </div>

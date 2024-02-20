@@ -7,7 +7,7 @@ import { useState } from "react";
 import { RiAdminFill } from "react-icons/ri";
 import { RiLockPasswordFill } from "react-icons/ri";
 import { Login } from "../post/require";
-import { log } from "console";
+
 export default function Home() {
   const [messageApi, contextHolder] = message.useMessage();
   const router = useRouter();

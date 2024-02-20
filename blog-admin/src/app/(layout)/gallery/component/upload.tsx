@@ -6,7 +6,7 @@ import * as qiniu from "qiniu-js";
 import { getUploadToken, uploadUrl } from "@/src/post/require";
 import { createObjectURL } from "qiniu-js/esm/utils";
 import { nanoid } from "nanoid";
-export const UpLoadImg = () => {
+export const UpLoadImg = ({imgList, setImgList}) => {
   const [fileList, setFileList] = useState<UploadFile[]>([]);
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [percent, setPercent] = useState(0);
@@ -32,6 +32,7 @@ export const UpLoadImg = () => {
             height: img.height,
             width: img.width,
           });
+          setImgList
           console.log({ res });
         }
       },
