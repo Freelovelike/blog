@@ -1,0 +1,29 @@
+{
+  "name": "blog-startup-scripts",
+  "version": "1.0.0",
+  "description": "博客系统快速启动脚本",
+  "main": "start-all.js",
+  "scripts": {
+    "start": "node start-all.js",
+    "stop": "node stop-all.js",
+    "start:win": "node start-all.js",
+    "stop:win": "node stop-all.js",
+    "start:unix": "./start-all.js",
+    "stop:unix": "./stop-all.js"
+  },
+  "bin": {
+    "blog-start": "./start-all.js",
+    "blog-stop": "./stop-all.js"
+  },
+  "keywords": [
+    "blog",
+    "startup",
+    "scripts",
+    "automation"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "engines": {
+    "node": ">=14.0.0"
+  }
+}
